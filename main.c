@@ -23,7 +23,7 @@ void mostrarMenu() {
 void cargarContactos() {
     FILE *archivo = fopen(ARCHIVO, "r");
     if (archivo == NULL) {
-        return; // Si el archivo no existe, simplemente retornamos
+        return;
     }
 
     while (!feof(archivo) && numContactos < MAX_CONTACTOS) {
