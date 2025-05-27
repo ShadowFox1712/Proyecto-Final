@@ -120,18 +120,18 @@ void buscarContacto() {
         int coincide = 0;
         
         switch(opcion) {
-            case 1: // Nombre
+            case 1: 
                 if (strstr(agenda[i].nombre, busqueda) != NULL || 
                     strstr(agenda[i].apellido, busqueda) != NULL) {
                     coincide = 1;
                 }
                 break;
-            case 2: // Número
+            case 2: 
                 if (strstr(agenda[i].numero, busqueda) != NULL) {
                     coincide = 1;
                 }
                 break;
-            case 3: // Correo
+            case 3: 
                 if (strstr(agenda[i].correo, busqueda) != NULL) {
                     coincide = 1;
                 }
